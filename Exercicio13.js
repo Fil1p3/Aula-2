@@ -5,8 +5,8 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.question (`Digite por favor o ano de nascimento do guri: `, (anoNas) => {
-    const anoAt = new Date().getFullYear
+rl.question ('Digite por favor o ano de nascimento do guri ', (anoNas) => {
+    const anoAt = new Date().getFullYear();
     const idade = anoAt - parseInt (anoNas);
     
     if  ( idade < 18) {
